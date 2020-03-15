@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #010;
+  color: #ccc;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body h1,
+body h2,
+body h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body section {
+  -webkit-column-count: 1;
+          column-count: 1;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    margin-top: 2rem;
+    color: #019;
+    text-align: justify;
+  }
+  section article {
+    -webkit-column-count: 2 !important;
+            column-count: 2 !important;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  section article {
+    -webkit-column-count: 3 !important;
+            column-count: 3 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

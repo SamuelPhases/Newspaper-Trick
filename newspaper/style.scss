@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #010;
+  color: #ccc;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  h1,
+  h2,
+  h3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  section {
+    column-count: 1;
+    column-gap: 2em;
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  section {
+    margin-top: 2rem;
+    color: #019;
+    text-align: justify;
+    article {
+      column-count: 2 !important;
+    }
+  }
+}
+
+@media only screen and(min-width: 1120px) {
+  section {
+    article {
+      column-count: 3 !important;
+    }
+  }
+}
